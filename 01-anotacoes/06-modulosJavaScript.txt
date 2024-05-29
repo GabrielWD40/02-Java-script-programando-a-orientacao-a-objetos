@@ -1,0 +1,72 @@
+Nessa aula nós vimos que não é uma prática muito boa socar um monte de classes num arquivo só, e eu esta reparando isso mesmo antes do professor falar. Acaba que o código fica enorme, e meio ruim de dar manutenção. Por isso, nessa aula nós aprendemos a colocar classes em outros aquivos e continuar usando eles normalmente.
+
+Para nós conseguirmos fazer um arquivo "conversar/reconhecer" um outro, é necessário atribuir dois valores: 
+
+    export → usado quando queremos exportar algo
+    import → usado quando queremos importar algo
+
+Cara, muito massa isso. É tipo em HTML, quando você precisa referenciar um link.
+Se liga só:
+
+Para exportar uma classe, precisaremos usar:
+    
+    EXPORT class nomeDaClasse{
+        atriburos
+    }
+
+    O EXPORT é em minúsculo, só pra ler melhor!!
+    Isso será importante para que possamos utilizar essa classe no código principal.
+________________________________________________________________________________________________________________________
+
+Para importar uma classe, será necessário você fazer o seguinte: 
+    import {nome_da_classe} from "./caminho-do-arquivo/nome-do-arquivo.js";
+    import {Cliente} from "./cliente.js";
+
+    O "./nome_do_arquivo" é a questão da localização do arquivo, se ele está ou não na mesma pasta. 
+________________________________________________________________________________________________________________________
+
+Mas isso tudo não será o sulficiente, você precisa informar ao interpretador que o import do qual você se refere é uma classe, senão, vai dar erro!
+
+Você vai precisar informar ao interpretador que o arquivo index também é um módulo, porque você só pode usar o import dentro de módulos.
+
+Para isso, você vai precisar ir até o terminal e executar o seguinte comando:
+    npm init e ir preenchendo os campos de nome, versão, repositórios e blá blá blá.
+
+________________________________________________________________________________________________________________________
+ 
+ *** IMPORTANTE *** 
+        Mano, você precisa ver se o diretório de onde vcê está criando o arquivo Json é o mesmo de onde o seu arquivo, porque isso é um cu de resolver, perdi mó tempo com isso.
+
+        Por exemplo, você vai criar um json uma pasta antes de onde está o seu arquivo, aí da ruim. Você precisa manjar de navegar pelos diretórios e só então criar um arquivo.json! Se vc pegar e arrastar, vai dar uma mensagem de que ele não encontrou o arquivo e não vai rodar. É um melda, viu! Mas faz sentido!
+
+        Você precisa colocar um atributo muito importante: 
+            "type" : "module"
+
+            Senão, vai dar erro também.
+
+        RELEMBRANDO: 
+            COLOCAR O TYPE = MODULE
+            CRIAR O ARQUIVO JSON NA MESMA PASTA DE ONDE ESTÁ O ARQUIVO.
+
+________________________________________________________________________________________________________________________
+
+Outra coisa legal que vimos foi a possibilidade de criar um objeto e referenciar outro objeto dentro desse objeto. Exemplificando: 
+
+Temos dois moldes, cliente e contaCorrente:
+    Dentro da contaCorrente eu posso referenciar o objeto cliente.
+
+const cliente1 = new cliente();
+cliente1.nome = "Gabriel";
+cliente1.CPF = 12345678912;
+cliente1.RG = 123456789;
+
+const contaCliente1 = new contaCorrente();
+contaCliente1.cliente = cliente1
+contaCliente1.agencia = 1234;
+
+Outra coisa muito bacana foi o sistema de transferência de uma conta para a outra; Nós criamos uma função chamada transferencia e passamos 2 parâmetros: valor e conta de destino.
+
+Dentro da função transferir, nós chamamos duas funções: 
+    função sacar, porque de certa forma você estásacando esse valor e depositando em outra conta.
+    Depois, como dado a dica, chamamos a função depositar e passamos a conta de destino como parâmetro.
+________________________________________________________________________________________________________________________

@@ -1,0 +1,12 @@
+{
+  "name": "bank",
+  "version": "1.0.0",
+  "description": "Projeto fictício do banco bitbank proposto pelo curso de javaScript orientada a objetos da Alura ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Gonçalves da Silva",
+  "type": "module",
+  "license": "ISC"
+}

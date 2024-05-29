@@ -1,0 +1,25 @@
+Nessa aula nós vimos a diferença entre tipos de referência passadas de parâmetros aos métodos dos moldes.
+
+Vimos que quando passamos um objeto de parâmetro, podemos alterar as propriedades dela diretamente na nossa função.
+Isso serve para podermos acrescentar ou retirar dados.
+
+Devemos ter muita cautela ao mexer diretamente em objetos por meio de funções, pois todas as alterações feitas serão aplicadas diretamente e eles sem dó nenhum. Então se você fizer cagada, sifudeu!
+
+Já quando passamos variáveis, toda a aleração feita dentro do escopo do método não é aplicada diretamente a variável de parâmetro. Ou seja, se existe uma variável chamada de valor que passamos de parâmetro a uma função:
+
+
+    let valor = 50;
+    funcaoCalcular(valor); → chamando a função e passando o parâmetro (valor = 50);
+
+    Calcular(valor_recebido){
+        valor_recebido = 20 alterando o valor da variável!
+    }
+
+
+
+    Mas o valor que estamos alterando não é necessáriamente o valor que passamos de parâmetro e sim, uma cópia dele.
+
+
+
+Você pode ler um artigo interessante mais tarde: 
+    https://medium.com/reactbrasil/como-o-javascript-funciona-gerenciamento-de-mem%C3%B3ria-como-lidar-com-4-vazamentos-comuns-de-5cfa341b9e39
