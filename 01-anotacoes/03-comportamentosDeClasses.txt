@@ -1,0 +1,28 @@
+Nessa aula, nós separamos conta corrente do cadastro.
+Nós criamos outra classe que representa a conta corrente, é só um molde.
+
+class contaCorrente {
+    agencia;
+    saldo;
+}
+
+Isso serviu para nós fazermos a abstração das informações, separamos as estruturas.
+
+
+
+
+Dentro dos objetos é possível armazenar até comportamentos. No nosso exemplo, vamos fazer o armazenamento de um comportamento de saque através das funções dentro desses moldes. Chamamos elas de MÉTODOS! Mas para ficar mais fácil, são funções dentro dos moldes que visam analisar o fluxo de comportamento de algo.
+
+
+Depois disso, usamos a PALAVRA "this." para acessar o objeto em que estamos aplicando a metodologia. Isso é importante porque ele vai fazer uma regra que verifica cada objeto em questão. Ele analisa o objeto enviado e não um em especifíco, aplicando a regra a todos os objetos existentes!
+
+
+Para chamarmos a função(método) de u objeto, será necessário fazer nomeDoObjeto.nomeDaFunção( parâmetro );
+
+Ou seja, no caso do JãoPorqueira, eu fiz contaJaoPorqueira.funcaoSacar(200);
+Explicando o código, estamos chamando a função de verificação de saque dentro do objeto 'conta do Jão', passando o valor 200 como parâmetro. Mediante a isso, ele vai executar a função com o parâmetro informado e retornar um valor.
+
+
+Já com o Gabriel, é a mesma coisa! Dentro do Objeto "Conta do Gabriel" nós passamos o parâmetro de saque e ele retorna o resultado.
+
+Como nós estamos acessando os objetos em específico, sempre use o THIS.nomeDoCampo para se referenciar!

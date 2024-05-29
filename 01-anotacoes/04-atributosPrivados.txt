@@ -1,0 +1,11 @@
+Nessa aula, nós falamos sobre o comportamento de depósito. Da mesma maneira que um usuário realiza saques, ele também pode realizar depósitos. Mas, e se alguém digitar um número negativo para depósito?
+
+É por isso que vamos colocar esse método dentro do nosso molde, para que todos os objetos tenham um mesmo comportamento e assim, nós conseguimos proteger o saldo.
+
+Outra coisa legal que vimos nesse aula foram os "_" na frente do nome das variávies, que significam que elas são privadas e nao devem ser acessadas ou alteradas fora da classe.
+
+Você pode ler a proposta em: https://github.com/tc39/proposal-class-fields#private-fields.
+
+No caso do nosso saldo, colocamos como _saldo. Isso significa que não devemos atribuir valores diretamente a esse elemento do vetor, isso é nomedavarivável.campo = valor.
+
+Só poderemos movimentar o saldo através de saques e depósitos! Por isso fizemos as funções dele internamente.

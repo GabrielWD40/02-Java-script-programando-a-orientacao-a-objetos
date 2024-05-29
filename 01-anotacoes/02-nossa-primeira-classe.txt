@@ -1,0 +1,45 @@
+Toda vez que nós criamos moldes em JavaScript, chamaremos esses moldes de CLASSES!
+Então toda vez que alguém falar de classes em JavaScript, lembre-se de que são MOLDES! 
+
+Para isso, nós vamos precisar usar a palavra "class" e o nome da classe.
+    *** IMPORTANTE: COLOQUE UM NOME CONDIZENTE COM A CLASSE, PRA NÃO DAR RUIM E VOCÊ SE ESTRESSAR DEPOIS ***
+
+    exemplo da aula: 
+
+    class Cliente {
+        const ClienteNome;
+        const ClienteCPF;
+        const ClieteAgencia; 
+        const ClienteSaldo;
+    }
+
+
+    Outra coisa legal que nós vimos em aula: As variáveis dentro das classes são chamadas de campos, é o mesmo conceito. Mas são como atributos daquela classe;  
+    Com isso, podemos dizer que todo o cliente terá essas propriedades!
+
+____________________________________________________________________________________________________________________________________________________
+
+    COMO USAR AS CLASSES?
+
+Se eu quiser criar um novo cliente a partir da classe que eu criei, vou ter que usar a palavra 'new' + nome da minha classe(); Você precisar colocar o parênteses. Exemplo:
+
+    const cliente1 = new Cliente();
+
+Aí você coloca o nome da variável . nome do campo = valor;
+    Exemplo: 
+
+    class Cliente{
+        nome;
+    }
+
+    const cliente1 = new Cliente();
+
+    cliente1.nome = "Jão porqueira";
+
+____________________________________________________________________________________________________________________________________________________
+
+
+A definição de um objeto é a seguinte: Quando você cria uma class, ou seja, molde, e cria algo a partir desse molde, temos um objeto!
+No caso dos nossos exemplos, os clientes 1 e 2 são objetos.
+
+Quando nós criamos um objeto estamos instanciando a nossa classe.

@@ -1,0 +1,19 @@
+
+Anotações sobre a primeira aula do nosso curso de JavaScript orientada a objetos.
+
+Repare que o professor Ricardo mostrou um problema bem chatinho desse programa, a repetição de códgio.
+No início, pudermos ver que alguns códigos se repetiam, como por exemplo:
+
+        const Cliente(N)Nome = "";
+        const Cliente(N)CPF = ;
+        const Cliente(N)Agencia = ;
+        const Cliente(N)Saldo = ;
+
+Onde N, representa o número do clientes do banco, qual a posição daquele cliente. 
+Podemos perceber que esse código fica sse repetindo a cada cliente novo desse banco e repetir tudo isso seria loucura!
+
+
+____________________________________________________________________________________________________________________________________________________
+
+Podemos ver esse problema nas indústrias, o processo é sempre o mesmo. MAAAAAS, como resolver isso? SIMPLES! Crie um molde! 
+Nas indústrias de produção em massa, existem moldes que servem como um padrão de como as coisas serão feitas automaticamente. É padronizar um processo. Isso vai ter sempre o mesmo resultado. E em programação vamos criar um molde do nosso cliente Bytebanco.

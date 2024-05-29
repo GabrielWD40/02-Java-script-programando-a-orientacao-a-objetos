@@ -1,0 +1,11 @@
+Por padrão em JavaScript, quando não retornammos nada em uma função o valor que recebemos é "undefined", que é indefinido! 
+
+-->> Toda a vez que ele achar a palavra "return", ele vai para a execução desse método e retornar o valor informado!
+
+Aprendemos uma coisa muito bacana na legibilidade do nosso código, ao inves de enchermos alguma coisa de if´s aninhados para verificar as regras, podemos primeiro fazer as coisas que não queremos e botar um return para informar o erro. Caso contrário, podemos realizar o procedimento.
+
+Resumidamente, colocamos o que não queremos que aconteça primeiro e depois da verificação dá negativa para o que não queremos, o código "certo" é executado de acordo com as escolhas feitas.
+
+No caso do nosso app de banco, socamos tudo que não queríamos na função sacar dentro dum "IF" e aí quando dava alguma coisa errada, ele retornava um valor e encerrava a operação, caso contrário ele fazia o saque.
+
+early return: É o caso do Bytebank, você retorna precocemente em caso de erro. Bota um return pra erros primeiro e ta seif!
